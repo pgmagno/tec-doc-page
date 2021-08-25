@@ -46,7 +46,7 @@ main {}
 
 .spacer {
     display: none;
-    height: 120px;
+    height: 140px;
     transition: all 0.4s ease-in-out;
 }
 
