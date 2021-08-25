@@ -131,7 +131,7 @@ code {
         margin: auto;
         height: auto;
         box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
-        padding-bottom: 15px;
+        padding: 0 0 15px;
         overflow: hidden;
     }
 
@@ -143,11 +143,11 @@ code {
         margin: auto;
         display: block;
         padding-top: 10px;
-        width: 50px;
+        width: 35px;
         transition: all 0.4s ease-in-out;
     }
 
-    .col1 a {
+    #navbar a {
         margin: auto;
         padding: 0;
         font-size: 24px;
