@@ -18,21 +18,37 @@
 
             <div class="col1">
                 <nav id="navbar">
-                    <header>
-                        <h1>Various Notes on Programming for Web</h1>
+                    <header class="collapsed-bar">
+                        <h1 onclick="slide();">Various Notes on Programming for Web</h1>
+                        <img src="./images/arrow.png" alt="" id="arrow" class="arrow" onclick="slide();">
                     </header>
-                    <ul>
-                        <li><a href="#Notes_on_Responsiveness" class="nav-link">Notes on Responsiveness</a></li>
-                        <li><a href="#Notes_on_Grid" class="nav-link">Notes on Grid</a></li>
-                        <li><a href="#Notes_on_Flexbox" class="nav-link">Notes on Flexbox</a></li>
-                        <li><a href="#Notes_on_CSS_Variables" class="nav-link">Notes on CSS Variables</a></li>
-                        <li><a href="#Notes_on_Animation" class="nav-link">Notes on Animation</a></li>
-                    </ul>
+                    <div id="items-left">
+                        <a href="#Notes_on_Responsiveness" class="nav-link">Notes on Responsiveness</a>
+                        <a href="#Notes_on_Grid" class="nav-link">Notes on Grid</a>
+                        <a href="#Notes_on_Flexbox" class="nav-link">Notes on Flexbox</a>
+                        <a href="#Notes_on_CSS_Variables" class="nav-link">Notes on CSS Variables</a>
+                        <a href="#Notes_on_Animation" class="nav-link">Notes on Animation</a>
+
+                        <p class="footer">Copyright ©<script>
+                                document.write(new Date().getFullYear())
+                            </script>
+
+                            <a class="footer" href="mailto:pgs.magno@gmail.com?subject=feedback-on-tech-page"> PGS Magno</a>
+                        </p>
+                    </div>
+                    <div id="items-top" class="items-top hide" onclick="slide();">
+                        <a href="#Notes_on_Responsiveness" class="nav-link">Notes on Responsiveness</a>
+                        <a href="#Notes_on_Grid" class="nav-link">Notes on Grid</a>
+                        <a href="#Notes_on_Flexbox" class="nav-link">Notes on Flexbox</a>
+                        <a href="#Notes_on_CSS_Variables" class="nav-link">Notes on CSS Variables</a>
+                        <a href="#Notes_on_Animation" class="nav-link">Notes on Animation</a>
+                    </div>
+
                 </nav>
             </div>
 
             <div class="col2">
-
+                <div class="spacer" id="spacer"></div>
                 <section class="main-section">
                     <header id="Notes_on_Responsiveness">
                         <h2>Notes on Responsiveness</h2>
@@ -50,7 +66,6 @@
                         <li>OBS: Don't forget to|</li>
                     </ul>
                 </section>
-
                 <section class="main-section">
                     <header id="Notes_on_Grid">
                         <h2>Notes on Grid</h2>
@@ -131,7 +146,16 @@
 
 
     </main>
+    <div class="footer2">
+        <p>Copyright ©<script>
+                document.write(new Date().getFullYear())
+            </script>
 
+            <a href="mailto:pgs.magno@gmail.com?subject=feedback-on-tech-page"> PGS Magno</a>
+        </p>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

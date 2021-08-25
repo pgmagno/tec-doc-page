@@ -16,6 +16,11 @@ main {}
     display: flex;
 }
 
+#navbar a {
+    display: block;
+    padding-left: 20px;
+}
+
 .col1 {
     height: 100%;
     width: 300px;
@@ -39,6 +44,27 @@ main {}
     text-align: center;
 }
 
+.spacer {
+    display: none;
+    height: 120px;
+    transition: all 0.4s ease-in-out;
+}
+
+.items-top {
+    display: none;
+    height: 160px;
+    overflow: hidden;
+}
+
+.hide {
+    height: 0;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.1s ease-in-out;
+}
+
 .col2 {
     display: flex;
     margin-left: 300px;
@@ -57,10 +83,6 @@ main {}
     margin: 0;
 }
 
-li {
-    list-style-type: none;
-}
-
 code {
     padding: 10px 20px;
     background-color: #222222;
@@ -70,9 +92,30 @@ code {
     font-weight: bold;
 }
 
+.arrow {
+    display: none;
+}
+
+.collapsed-bar {
+    overflow: hidden;
+}
+
+.footer2 {
+    display: none;
+}
+
 @media (max-width: 700px) {
+    header {
+        padding-top: 120px;
+        margin-top: -120px;
+    }
+
     .container {
         flex-direction: row;
+    }
+
+    .spacer {
+        display: block;
     }
 
     main {
@@ -89,12 +132,31 @@ code {
         height: auto;
         box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
         padding-bottom: 15px;
+        overflow: hidden;
     }
 
-    .col1 a, ul {
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .arrow {
+        margin: auto;
+        display: block;
+        padding-top: 10px;
+        width: 50px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .col1 a {
         margin: auto;
         padding: 0;
         font-size: 24px;
+    }
+
+    .items {
+        height: 0;
+        padding-top: 20px;
+        transition: 0.5s;
     }
 
     .col2 {
@@ -102,4 +164,51 @@ code {
         margin: auto;
         width: 100%;
     }
+
+    #items-left {
+        display: none;
+    }
+
+    #items-top {
+        display: block;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .footer2 {
+        text-align: center;
+        padding: 20px 0;
+        height: 40px;
+        display: block;
+        background-color: #111111;
+        color: #dddddd;
+        font-weight: bold;
+        font-family: "Open Sans";
+    }
+
+    .footer2 a {
+        text-decoration: none;
+        color: #dddddd;
+    }
+
+    .footer2 p {
+        margin: 0;
+    }
+}
+
+.footer {
+    padding: 30px;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer a {
+    display: block;
+    text-align: center;
+    padding: 0 !important;
+    text-decoration: none;
+    color: white;
 }
